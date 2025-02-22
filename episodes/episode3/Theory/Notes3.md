@@ -1,0 +1,17 @@
+- Revision of running the project using parcel command.
+- create a script in package.json for starting the project and make it easy.
+- npm start, npm run start, npm run build
+- Introduction to JSX
+- JSX not a part of REACT.
+- JSX and react.createElement console is same
+- Babel is package which Parcel is using to transpile the JSX so that React understands it.
+- Babel other features.
+- JSX & HTML difference.
+- React extensions
+- React Component
+- React Components type - Class & Functional
+- Started with functional component using arrow function.
+- Component composition 
+- How different ways are there to call a functional component inside another component, how JS expression or variable can be called inside a functional component.
+- How curly braces help to add JS expression or variables in JSX.
+- JSX superpower is that it sanitise the data - cross scripting attacks.

@@ -1,0 +1,29 @@
+<!-- It will be used as map that what all topics have been discussed in this episode. -->
+- Difference between git & github
+- Why can't we push the same code on PROD - no minification in the code, too many console, no optimisation of code and images
+- What needs to be done to make our app production ready
+- how can u create your own create react app without the npx - what is behind this cmd.
+- lots of other packages and libraries are requireed to make our app production ready & to make our app fast - not only REACT is going to do.
+- npm - manages the packages. Its not NODE PACAKGE MANAGER. Standard repository for all the packages. Biggest package manager. 
+- add node package manager to our project - npm init
+- package.json is created through npm init.
+- what is package.json
+- start installing dependencies
+- most important package which we are using is BUNDLERS - parcel is what we are going to use in this project. Webpack is also another example of bundler.
+- Bundler make our app production ready.
+- 2 type of dependencies - dev and normal
+- caret & tilde in package.json before the package version
+- why and what is package-lock.json is there?
+- Diff. b/w package.json vs package-lock.json
+- Scenario - it was working on local but not on PROD - hashkeys in package-lock.json.
+- what is node_modules and the code in it.
+- Transitive Dependencies
+- gitignore
+- npx parcel Episode1/Coding/index.html - meaning? npx used here for execution of package.
+- what parcel did in the above command.
+- injecting of REACT in our project using npm cmd and not CDN links.
+- install react as a package
+- parcel benefits
+- PROD build - dist and parcel cache folders
+- browserslist benefit
+

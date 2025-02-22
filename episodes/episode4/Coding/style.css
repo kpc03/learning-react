@@ -1,0 +1,147 @@
+ul{
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+}
+ul li{
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.9;
+    transition: all 0.25s ease;
+}
+li:hover{
+    font-weight: bold;
+    opacity: 1;
+    text-decoration: underline;
+    transform: translateY(-1px);
+}
+header{
+    padding: 12px 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+nav, ul{
+    display: flex;
+    align-items: center;
+}
+nav{
+    width: 50%;
+    justify-content: flex-end;
+}
+footer{
+    background-color: rgba(144, 238, 144, 0.5);
+    padding: 12px 20px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 14px;
+        color: #000;
+    }
+}
+.container{
+    margin-left: calc(10% + 20px);
+    margin-right: calc(10% + 20px);
+}
+.body{
+    min-height: 700px;
+    padding: 30px;
+}
+.logoContainer{
+    cursor: pointer;
+    width: 50%;
+    img{
+        height: 60px;
+        border-radius: 4px;
+    }
+}
+.searchContainer{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.restroCardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 30px;
+}
+.restroCardsContainer .imgContainer{
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+    background-color: darkslategray;
+    border-radius: 8px 8px 0 0;
+}
+.imgContainer img {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.restroCards{
+    width: 22%;
+    margin: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.restroCards:hover{
+    transform: scale(0.96);
+}
+.contentContainer{
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-top: 0;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.contentContainer p {
+    font-size: 16px;
+    color: #666;
+    word-break: break-all;
+    margin-bottom: 6px;
+}
+.restroName{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000 !important;
+    margin-bottom: 12px !important;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 4px;
+    }
+}
+.secondaryInfo{
+    margin-top: auto;
+}
+.cuisines{
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
