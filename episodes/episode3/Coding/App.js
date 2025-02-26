@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 // JSX
 const jsxHeading = <h2 id="heading"> hello I am JSX Heading</h2>;
