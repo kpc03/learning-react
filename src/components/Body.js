@@ -1,6 +1,7 @@
 import RestaurantsCards from './RestaurantsCards';
 import { useState, useEffect } from "react";
 import ShimmerCard from './ShimmerCards';
+import { API_URL } from '../../utils/constants';
 
 const Body = () => {
     let [restaurantData, setRestaurantData] = useState([]);
@@ -13,7 +14,8 @@ const Body = () => {
     }, []);
 
     const fetchData = async () => {
-        const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5649034&lng=77.2403317&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
+        const proxy_url = `https://api.allorigins.win/raw?url=${encodeURIComponent(API_URL)}`;
+        const data = await fetch(proxy_url);
         const jsonData = await data.json();
         setRestaurantData(jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredData(jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);

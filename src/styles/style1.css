@@ -145,6 +145,14 @@ footer{
     overflow: hidden;
     margin-top: 12px;
 }
+.flex-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.error{
+    color: red;
+}
 
 
 /* Shimmer CSS */
