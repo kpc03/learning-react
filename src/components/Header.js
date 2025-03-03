@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import logo from '../../utils/logo.png';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -14,10 +15,10 @@ const Header = () => {
                 </div>
                 <nav>
                     <ul>
-                        <li>Home</li>
+                        <li><Link to="/">Home</Link></li>
                         <li>Cart</li>
-                        <li>Contact Us</li>
-                        <li>About</li>
+                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="/about">About</Link></li>
                         <li>
                             <button onClick={() => {
                                 btnName === 'Login' ? setBtnName('Logout') : setBtnName('Login')
