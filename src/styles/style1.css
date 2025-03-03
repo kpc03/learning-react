@@ -27,7 +27,6 @@ header .container{
 nav, ul{
     display: none;
 }
-
 footer{
     background-color: rgba(144, 238, 144, 0.5);
     padding: 12px 20px;
@@ -39,6 +38,10 @@ footer{
         font-size: 14px;
         color: #000;
     }
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .body{
     min-height: 700px;
@@ -190,6 +193,37 @@ footer{
     border-radius: 5px;
     margin-top: 5px;
 }
+.cardListWrapper{
+    width: 100%;
+    margin-top: 24px;
+}
+.cardList{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #333;
+}
+.cardListBorder{
+    border-bottom: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+.cardList img{
+    border-radius: 4px;
+}
+.cardList p {
+    font-size: 14px;
+}
+.isVeg, .isNonVeg{
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+}
+.isVeg{
+    background-color: #4CAF50;
+}
+.isNonVeg{
+    background-color: #F44336;
+}
 
 /* Keyframes for shimmer effect */
 @keyframes shimmer {
@@ -223,12 +257,15 @@ footer{
     }
 }
 @media (min-width: 768px) {
-    .restroCards{
+    .resLinks{
         width: 48%;
     }
 }
 @media (min-width: 1024px) {
-    .restroCards{
+    .resLinks{
         width: 23%;
+    }
+    .restroCards{
+        width: 100%;
     }
 }
