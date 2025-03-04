@@ -43,6 +43,16 @@ a{
     text-decoration: none;
     color: inherit;
 }
+select{
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    font-size: 24px;
+}
+table, tr, td, th{
+    border: 1px solid #e0e0e0;
+    font-size: 24px;
+    padding: 12px;
+}
 .body{
     min-height: 700px;
     padding: 20px;
