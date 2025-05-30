@@ -234,6 +234,9 @@ table, tr, td, th{
 .isNonVeg{
     background-color: #F44336;
 }
+.resLinks {
+    width: 100%;
+}
 
 /* Keyframes for shimmer effect */
 @keyframes shimmer {
@@ -242,6 +245,11 @@ table, tr, td, th{
 }
 
 /* media queries */
+@media (min-width: 600px) {
+    .resLinks{
+        width: 48%;
+    }
+}
 @media (min-width: 768px) {
     nav, ul{
         display: flex;
