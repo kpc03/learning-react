@@ -15,7 +15,7 @@ const Body = () => {
     }, []);
 
     const fetchData = async () => {
-        const proxy_url = `https://api.allorigins.win/raw?url=${encodeURIComponent(API_URL)}`;
+        const proxy_url = "http://localhost:3000/swiggy";
         const data = await fetch(proxy_url);
         const jsonData = await data.json();
         setRestaurantData(jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
