@@ -237,6 +237,18 @@ table, tr, td, th{
 .resLinks {
     width: 100%;
 }
+.user-card{
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    max-width: 300px;
+    overflow: hidden;
+}
+.user-card h2{
+    padding: 6px 0;
+}
+.user-card img{
+    width: 100%;
+}
 
 /* Keyframes for shimmer effect */
 @keyframes shimmer {
