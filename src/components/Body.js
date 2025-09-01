@@ -15,7 +15,7 @@ const Body = () => {
     }, []);
 
     const fetchData = async () => {
-        const proxy_url = "http://localhost:3000/swiggy";
+        const proxy_url = "http://localhost:8080/swiggy";
         const data = await fetch(proxy_url);
         const jsonData = await data.json();
         setRestaurantData(jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
